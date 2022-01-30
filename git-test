@@ -19,5 +19,8 @@ $ git checkout <name>
 # change actual branch
 
 merge
-# first, you need to enter in the branch that will receive content
+# before merging, you need to make sure that your version of  master is up o date
+# otherwise, you'll merge to an old version. So use the command
+# remember that you need to enter in the branch that will receive content
+$ git pull
 $ git merge <branch with modification>
