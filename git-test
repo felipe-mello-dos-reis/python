@@ -44,3 +44,39 @@ pull request
 git ignore
 # make sure that a file wont be added to cloud
 # create a file with tha names, each one in on line
+
+Best Practices
+$ git diff <file>
+# shows what moddifications were made in this file, quit with :q
+$ git stash
+# discard all local changes,  but save for re-use later, with the following command
+$ git stash pop
+# apply the last and removes it
+$ git stash list
+$ git stash <number>
+
+Undo a $ git add <file>
+$ git reset HEAD <name>
+$ git reset  -- <name>
+$ git reset
+# unstage everything
+
+Undo a commit
+$ git log
+# first 7 chars
+$ git revert <commit-id> <file name if is only one file>
+
+$ git rebase -i
+# change pick of the commit you want to change, and change it to edit
+# change to drop to exclude
+# "esc" :wq
+$ git commit --amend
+# now you can edit the commit message
+
+# if you  just want to change the last commit massage, just run the  git commit --amend
+
+#then
+$ git rebase --continue
+
+
+Undo a push
