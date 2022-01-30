@@ -17,3 +17,7 @@ $ git branch <name>
 # create new branch, commom name: staging
 $ git checkout <name>
 # change actual branch
+
+merge
+# first, you need to enter in the branch that will receive content
+$ git merge <branch with modification>
