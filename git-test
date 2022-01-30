@@ -1,10 +1,17 @@
 personal access token in file
 /felps/home/Documents/Python/.git-credentials
 
+$ it init
 $ git add <file>
 # or git add . to add all files
 $ git commit -m "<message>"
 $ git push
+
+chosing where to push
+# rememmber to create a new repository in github site
+$ git remote add origin <url>
+git push --set-upstream origin <branch name>
+
 $ git reflog
 # see log, most recent at top, to go back to a different  version, use
 $ git reset --hard <id from reflog>
@@ -24,3 +31,16 @@ merge
 # remember that you need to enter in the branch that will receive content
 $ git pull
 $ git merge <branch with modification>
+$ git push
+
+creating a new branch based on another, usefull for team working
+$ git checkout -b <new branch> <base branch>
+
+pull request
+# on github site, you see the new moddification, chose wich branches to merge
+# click on pull request, waiting to somoene approve your pull request
+# if you gotreject, update your file and make a new commit, no need to make a new pull request
+
+git ignore
+# make sure that a file wont be added to cloud
+# create a file with tha names, each one in on line
