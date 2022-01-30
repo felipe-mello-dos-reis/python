@@ -1,0 +1,23 @@
+personal access token in file
+/felps/home/Documents/Python/.git-credentials
+
+$ git add <file>
+# or git add . to add all files
+$ git commit -m "<message>"
+$ git push
+$ git reflog
+# see log, most recent at top, to go back to a different  version, use
+$ git reset --hard <id from reflog>
+# it is not a good thing, always check your  superior
+
+branches
+$ git branch
+# show branches available
+$ git branch <name>
+# create new branch, commom name: staging
+$ git checkout <name>
+# change actual branch
+
+merge
+# first, you need to enter in the branch that will receive content
+$ git merge <branch with modification>
