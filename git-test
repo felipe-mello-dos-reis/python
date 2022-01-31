@@ -78,5 +78,8 @@ $ git commit --amend
 #then
 $ git rebase --continue
 
+One branch per feature
+Pulling from master
+$ git rebase -i master
+#then change pick for squash
 
-Undo a push
