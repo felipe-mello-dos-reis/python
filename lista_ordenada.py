@@ -6,4 +6,4 @@ def ordenada(list):
         else:
             prev = item
     return True
-
+#ohana
